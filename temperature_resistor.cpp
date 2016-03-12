@@ -9,10 +9,6 @@ int main(int argc __unused, char **argv __unused) {
   const int R0 = 100000; // R0 = 100k
 
   mraa_init();
-  
-  mraa_gpio_context gpio2 = mraa_gpio_init(2);
-  mraa_gpio_dir(gpio2, MRAA_GPIO_OUT);
-  
   mraa_aio_context aio0 = mraa_aio_init(0);
 
   while(true){
