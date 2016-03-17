@@ -4,12 +4,7 @@
 #include <mraa.h>
 
 int main(int argc __unused, char **argv __unused) {
-
   mraa_init();
-  
-  mraa_gpio_context gpio2 = mraa_gpio_init(2);
-  mraa_gpio_dir(gpio2, MRAA_GPIO_OUT);
-  
   mraa_aio_context aio0 = mraa_aio_init(0);
 
   while(true){
